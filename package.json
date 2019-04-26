@@ -1,0 +1,21 @@
+{
+  "name": "xoso-crawler",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "luatnd.mxn0",
+  "license": "MIT",
+  "scripts": {
+    "dev-crawl": "node-dev --inspect-brk src/crawl.js",
+    "dev-parse": "node-dev src/parse.js",
+    "crawl": "node src/crawl.js",
+    "parse": "node src/parse.js",
+    "start": "nohup yarn crawl && nohup yarn parse"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "puppeteer": "^1.14.0"
+  },
+  "devDependencies": {
+    "node-dev": "^4.0.0"
+  }
+}
