@@ -11,8 +11,13 @@ const puppeteer = require('puppeteer');
 
 const KQNet_SoKetQua_Crawler = require('./ketqua.net/soKetQua');
 
-puppeteer.launch().then(async browser => {
-  await KQNet_SoKetQua_Crawler.startCrawlAllDailyResult(browser);
-  
-  // await browser.close();
-});
+puppeteer
+  .launch({
+    // headless: false,
+    // devtools: false,
+  })
+  .then(async browser => {
+    await KQNet_SoKetQua_Crawler.startCrawlAllDailyResult(browser);
+
+    // await browser.close();
+  });
