@@ -60,7 +60,7 @@ async function crawlMonthlyData(page, dateFrom, dateTo) {
   /**
    * Do not use page.type() => it will prepend the text to input, not set the value
    */
-  await PageUtil.set(page, 'form[action="/so-ket-qua"] input#date', dateFrom);
+  await PageUtil.set(page, 'form[action="/so-ket-qua"] input#date', endOfMonth.format(Config.dateFormat));
   await PageUtil.set(page, 'form[action="/so-ket-qua"] input#count', dayCount);
 
   // Submit form
