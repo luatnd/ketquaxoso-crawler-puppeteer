@@ -60,7 +60,7 @@ console.log('{} maxDurationToEnsureExpectedProfit: ', maxDurationToEnsureExpecte
 startPlaySomeJackpod(
   // [],
   ["02", "08", "12", "98", "99"],
-  "01-10-2018",
+  "01-01-2019",
   "27-04-2019"
 )
 // startPlayAJackpod("89", "01-01-2019", "29-04-2019")
