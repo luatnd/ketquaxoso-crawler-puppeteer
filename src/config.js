@@ -7,6 +7,7 @@ const Config = {
   // dateFrom: '05-01-2002',
   // dateTo: '30-03-2002',
   dateFormat: "DD-MM-YYYY",
+  dbDateFormat: "YYYYMMDD",
 };
 
 // If you not configure dateTo, try to set it as now()

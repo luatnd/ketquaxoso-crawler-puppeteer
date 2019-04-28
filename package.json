@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "moment": "^2.24.0",
+    "mongodb": "^3.2.3",
     "puppeteer": "^1.14.0"
   },
   "devDependencies": {
