@@ -127,7 +127,10 @@ async function parseDailyData(page, dailyDataEle) {
   console.log('{parseDailyData} dateStr: ', dateStr);
 
   const date = moment(dateStr, Config.dateFormat);
+  const dateInYMD = date.format('YYYYMMDD');
+
   let dayData = {
+    date: dateInYMD,
     // Giải: kq cua giai
   };
 
@@ -154,7 +157,7 @@ async function parseDailyData(page, dailyDataEle) {
   // console.log('{parseDailyData} dayData: ', JSON.stringify(dayData));
 
   // // save to json file
-  FileUtil.saveJsonSync(date.format('YYYYMMDD'), dayData);
+  FileUtil.saveJsonSync(dateInYMD, dayData);
 }
 
 
