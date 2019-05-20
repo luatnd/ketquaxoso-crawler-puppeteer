@@ -1,5 +1,7 @@
 /**
  * NOTE: Run with `node src/tools/ModifyJsonFile.js`
+ *
+ * + Add date info to json file
  */
 const fs = require('fs');
 
